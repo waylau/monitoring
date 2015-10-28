@@ -16,8 +16,14 @@ public class SigarUtil {
 	public final static Sigar sigar = initSigar();
 
     private static Sigar initSigar() {
-        try {
-            String file = Resources.getResource("sigar/.sigar_shellrc").getFile();
+        try {	
+
+        	 
+            String file =  new File("sigar/.sigar_shellrc").getCanonicalPath();
+//Resources.getResource(System.getProperty("user.dir") + "/sigar/.sigar_shellrc").getFile();
+            file = Resources.getResource("sigar/.sigar_shellrc").getFile();
+            System.out.println("---java.library.path"+ file);
+            
             File classPath = new File(file).getParentFile();
 
             String path = System.getProperty("java.library.path");

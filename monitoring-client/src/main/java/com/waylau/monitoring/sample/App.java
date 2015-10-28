@@ -9,7 +9,7 @@ import org.hyperic.sigar.SigarException;
 import com.waylau.monitoring.timertask.CpuInfoTimerTask;
 import com.waylau.monitoring.util.SigarUtil;
 
-public class sigarTest {
+public class App {
 
  
 	public static void main(String[] args) throws SigarException {
