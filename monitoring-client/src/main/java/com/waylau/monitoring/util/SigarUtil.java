@@ -19,9 +19,8 @@ public class SigarUtil {
         try {	
 
         	 
-            String file =  new File("sigar/.sigar_shellrc").getCanonicalPath();
-//Resources.getResource(System.getProperty("user.dir") + "/sigar/.sigar_shellrc").getFile();
-            file = Resources.getResource("sigar/.sigar_shellrc").getFile();
+            //String file =  new File("sigar/.sigar_shellrc").getCanonicalPath();
+        	String file = Resources.getResource("sigar/.sigar_shellrc").getFile();
             System.out.println("---java.library.path"+ file);
             
             File classPath = new File(file).getParentFile();

@@ -9,8 +9,6 @@
 	<name>monitoring-client</name>
 	<url>http://www.waylau.com</url>
 	<properties>
-
-		<jetty.version>9.2.9.v20150224</jetty.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
@@ -21,7 +19,7 @@
                 <targetPath>${project.build.directory}</targetPath>
             </resource>
         </resources>
-  
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
